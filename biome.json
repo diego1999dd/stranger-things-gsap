@@ -1,0 +1,87 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"vcs": {
+		"clientKind": "git",
+		"enabled": false,
+		"useIgnoreFile": false
+	},
+	"files": {
+		"includes": [
+			"**/*.css",
+			"**/*.js",
+			"**/*.mjs",
+			"**/*.jsx",
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.astro",
+			"**/*.json"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"html": {
+		"formatter": {
+			"enabled": true
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": "info",
+			"nursery": {
+				"noUnknownAtRule": "off"
+			},
+			"recommended": true
+		}
+	},
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "off"
+			}
+		},
+		"enabled": true
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.astro"],
+			"formatter": {
+				"enabled": true,
+				"indentStyle": "tab",
+				"lineWidth": 100
+			},
+			"javascript": {
+				"formatter": {
+					"quoteStyle": "single",
+					"semicolons": "asNeeded"
+				}
+			},
+			"linter": {
+				"rules": {
+					"nursery": {
+						"noUnknownAtRule": "off"
+					},
+					"correctness": {
+						"noUnusedImports": "off",
+						"noUnusedVariables": "off"
+					}
+				}
+			}
+		},
+		{
+			"includes": ["**/*.css"],
+			"linter": {
+				"enabled": false
+			}
+		}
+	]
+}

@@ -1,0 +1,139 @@
+---
+// Config & Layout
+import Layout from '@layouts/Layout.astro'
+
+// Astro Assets
+import { Image } from 'astro:assets'
+---
+
+<Layout>
+	<header>
+		<h2>DRN.</h2>
+		<img src="/public/netflix-logo.svg" alt="Logo da Netflix" />
+	</header>
+	<main>
+		<section class="hero">
+			<div class="esquerda">
+				<h3>THE EXPERIENCE</h3>
+				<h1>STRANGER THINGS</h1>
+			</div>
+			<div class="direita">
+				<p>Descubra os seus poderes e vire o herói de sua própria aventura!</p>
+				<button
+					>ESCOLHA A SUA CIDADE
+					<img src="/src/assets/seta.svg" alt="Seta" />
+				</button>
+			</div>
+		</section>
+		<section class="secaoCidade">
+			<div class="titulo">
+				<h2>ESCOLHA SUA CIDADE</h2>
+				<button
+					>COMPRAR INGRESSOS
+					<img src="/src/assets/seta.svg" alt="Seta" />
+				</button>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Sidney</h3>
+					<p>INGRESSOS DISPONÍVEIS</p>
+				</div>
+				<div class="card">
+					<h3>Cidade de Méxicoy</h3>
+					<p>INGRESSOS DISPONÍVEIS</p>
+				</div>
+				<div class="card">
+					<h3>Yas Island</h3>
+					<p>INGRESSOS DISPONÍVEIS</p>
+				</div>
+			</div>
+		</section>
+		<section class="secaoDepoimentos">
+			<div class="logotipos">
+				<img src="/src/assets/netflix-logo.svg" alt="Logo da Netflix" />
+				<img src="/src/assets/clio-awards-logo.svg" alt="Logo da Clio Awards" />
+				<img src="/src/assets/logo-fever.svg" alt="Logo da Fever" />
+			</div>
+			<div class="depoimentos">
+				<div class="depoimento">
+					<img src="/src/assets/logo-nbc.svg" alt="Logo da NBC" />
+					<p>
+						"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
+						special effects of a 3D Universal Studios ride with a telekinetic escape room."
+					</p>
+				</div>
+				<div class="depoimento">
+					<img src="/src/assets/logo-fox.svg" alt="Logo da Fox13 SEATTLE" />
+					<p>
+						"Immerse yourself on your own adventure with Eleven, Michael, Dustin, Lucas, Max and
+						Will for a very special episode starring none other than you."
+					</p>
+				</div>
+				<div class="depoimento">
+					<img src="/src/assets/logo-san-francisco.svg" alt="Logo da SanFrancisco magazine" />
+					<p>
+						"The Stranger Things Experience is a scary, endearing, hilarious, and joyous celebration
+						of everything we already love about the show."
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="secaoObrigado">
+			<h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
+			<ul>
+				<li>Sidney</li>
+				<li>Rio de Janeiro</li>
+				<li>São Paulo</li>
+				<li>Los Angeles</li>
+				<li>Nova Iorque</li>
+				<li>São Francisco</li>
+				<li>Londres</li>
+				<li>Atlanta</li>
+				<li>Paris</li>
+				<li>Toronto</li>
+				<li>Seattle</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<div class="conteudoFooter">
+			<div class="logoFooter">
+				<h3>THE EXPERIENCE</h3>
+				<h2>STRANGER THINGS</h2>
+			</div>
+			<div class="secoesFooter">
+				<div class="social">
+					<h3>REDES SOCIAIS</h3>
+					<ul>
+						<li><img src="/src/assets/facebook.svg" alt="Facebook" /></li>
+						<li><img src="/src/assets/instagram.svg" alt="Instagram" /></li>
+						<li><img src="/src/assets/twitter.svg" alt="Twitter" /></li>
+					</ul>
+				</div>
+				<div class="parceiro">
+					<h3>PARCEIRO DE MÍDIA</h3>
+					<img src="" alt="" />
+				</div>
+				<div class="institucional">
+					<h2>INSTITUCIONAL</h2>
+					<nav>
+						<ul>
+							<li>Contato</li>
+							<li>Imprensa</li>
+							<li>Parcerias</li>
+							<li>Influenciadores</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="logotiposFooter">
+					<img src="/src/assets/netflix-logo.svg" alt="Logo da Netflix" />
+					<img src="/src/assets/logo-fever.svg" alt="Logo da Fever" />
+				</div>
+			</div>
+			<div class="textoInfinito">
+				<h3>THE EXPERIENCE</h3>
+				<h3>THE EXPERIENCE</h3>
+			</div>
+		</div>
+	</footer>
+</Layout>
