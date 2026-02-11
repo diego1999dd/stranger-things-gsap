@@ -24,155 +24,162 @@ import footerParceiro from '@assets/footer-parceiro.svg'
 ---
 
 <Layout>
-	<header>
-		<h2>DRN.</h2>
-		<img src={netflixLogo.src} alt="" />
-	</header>
+	<div id="smooth-wrapper">
+		<div id="smooth-content">
+			<header>
+				<h2>DRN.</h2>
+				<img src={netflixLogo.src} alt="" />
+			</header>
 
-	<!-- SECOES PRINCIPAIS -->
-	<main>
-		<!-- SECAO HERO -->
-		<section class="hero">
-			<picture>
-				<source media="(max-width: 600px)" srcset={bg1Mobile.src} />
-				<img src={bg1.src} alt="" />
-			</picture>
-			<picture>
-				<source media="(max-width: 600px)" srcset={bg2Mobile.src} />
-				<img src={bg2.src} alt="" />
-			</picture>
-			<div class="esquerda">
-				<h3>THE EXPERIENCE</h3>
-				<h1>STRANGER THINGS</h1>
-			</div>
-			<div class="direita">
-				<p>Descubra os seus poderes e vire o herói de sua própria aventura!</p>
-				<button>
-					ESCOLHA SUA CIDADE
-					<img src={setaBotao.src} alt="" />
-				</button>
-			</div>
-		</section>
+			<!-- SECOES PRINCIPAIS -->
+			<main>
+				<!-- SECAO HERO -->
+				<section class="hero">
+					<picture data-speed=".6">
+						<source media="(max-width: 600px)" srcset={bg1Mobile.src} />
+						<img src={bg1.src} alt="" />
+					</picture>
+					<picture>
+						<source media="(max-width: 600px)" srcset={bg2Mobile.src} />
+						<img src={bg2.src} alt="" />
+					</picture>
+					<div class="esquerda">
+						<h3>THE EXPERIENCE</h3>
+						<h1>STRANGER THINGS</h1>
+					</div>
+					<div class="direita">
+						<p>Descubra os seus poderes e vire o herói de sua própria aventura!</p>
+						<button>
+							ESCOLHA SUA CIDADE
+							<img src={setaBotao.src} alt="" />
+						</button>
+					</div>
+				</section>
 
-		<div class="bgMonstro">
-			<!-- SECAO 2 -->
-			<section class="secaoCidade">
-				<div class="titulo">
-					<h2>ESCOLHA SUA CIDADE</h2>
-					<button>
-						ESOLHA SUA CIDADE
-						<img src={setaBotao.src} alt="" />
-					</button>
+				<div class="bgMonstro">
+					<!-- SECAO 2 -->
+					<section class="secaoCidade">
+						<div class="titulo">
+							<h2>ESCOLHA SUA CIDADE</h2>
+							<button>
+								ESOLHA SUA CIDADE
+								<img src={setaBotao.src} alt="" />
+							</button>
+						</div>
+						<div class="cards">
+							<div class="card">
+								<h3>Sidney</h3>
+								<p>INGRESSOS DISPONÍVEIS</p>
+							</div>
+							<div class="card">
+								<h3>Cidade do México</h3>
+								<p>INGRESSOS DISPONÍVEIS</p>
+							</div>
+							<div class="card">
+								<h3>Yas Island</h3>
+								<p>INGRESSOS DISPONÍVEIS</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- SECAO 3 -->
+					<section class="secaoDepoimentos">
+						<div class="logotipos">
+							<img src={netflixLogo.src} alt="" />
+							<img src={clioLogo.src} alt="" />
+							<img src={feverLogo.src} alt="" />
+						</div>
+						<div class="depoimentos">
+							<div class="depoimento">
+								<img src={imgDep1.src} alt="" />
+								<p>
+									"Guests are immersed into an original "Stranger Things" storyline...[it] combines
+									the special effects of a 3D Universal Studios ride with a telekinetic escape
+									room."
+								</p>
+							</div>
+							<div class="depoimento">
+								<img src={imgDep2.src} alt="" />
+								<p>
+									"Guests are immersed into an original "Stranger Things" storyline...[it] combines
+									the special effects of a 3D Universal Studios ride with a telekinetic escape
+									room."
+								</p>
+							</div>
+							<div class="depoimento">
+								<img src={imgDep3.src} alt="" />
+								<p>
+									"Guests are immersed into an original "Stranger Things" storyline...[it] combines
+									the special effects of a 3D Universal Studios ride with a telekinetic escape
+									room."
+								</p>
+							</div>
+						</div>
+					</section>
 				</div>
-				<div class="cards">
-					<div class="card">
-						<h3>Sidney</h3>
-						<p>INGRESSOS DISPONÍVEIS</p>
+
+				<!-- SECAO 4 -->
+				<section class="secaoObrigado">
+					<h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
+					<ul>
+						<li>Sidney</li>
+						<li>São Paulo</li>
+						<li>Cruzeiro</li>
+						<li>Rio de Janeiro</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+						<li>Sidney</li>
+					</ul>
+				</section>
+			</main>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="conteudoFooter">
+					<div class="logoFooter">
+						<h3>THE EXPERIENCE</h3>
+						<h2>STRANGER THINGS</h2>
 					</div>
-					<div class="card">
-						<h3>Cidade do México</h3>
-						<p>INGRESSOS DISPONÍVEIS</p>
-					</div>
-					<div class="card">
-						<h3>Yas Island</h3>
-						<p>INGRESSOS DISPONÍVEIS</p>
+					<div class="secoesFooter">
+						<div class="social">
+							<h3>REDES SOCIAIS</h3>
+							<ul>
+								<li><img src={footerFacebook.src} alt="" /></li>
+								<li><img src={footerInstagram.src} alt="" /></li>
+								<li><img src={footerTwitter.src} alt="" /></li>
+							</ul>
+						</div>
+						<div class="parceiro">
+							<h3>PARCEIRO DE MÍDIA</h3>
+							<img src={footerParceiro.src} alt="" />
+						</div>
+						<div class="institucional">
+							<h3>INSTITUCIONAL</h3>
+							<nav>
+								<ul>
+									<li>Contato</li>
+									<li>Imprensa</li>
+									<li>Parcerias</li>
+									<li>Influenciadores</li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
-			</section>
-
-			<!-- SECAO 3 -->
-			<section class="secaoDepoimentos">
-				<div class="logotipos">
+				<div class="logotiposFooter">
 					<img src={netflixLogo.src} alt="" />
-					<img src={clioLogo.src} alt="" />
 					<img src={feverLogo.src} alt="" />
 				</div>
-				<div class="depoimentos">
-					<div class="depoimento">
-						<img src={imgDep1.src} alt="" />
-						<p>
-							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
-							special effects of a 3D Universal Studios ride with a telekinetic escape room."
-						</p>
-					</div>
-					<div class="depoimento">
-						<img src={imgDep2.src} alt="" />
-						<p>
-							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
-							special effects of a 3D Universal Studios ride with a telekinetic escape room."
-						</p>
-					</div>
-					<div class="depoimento">
-						<img src={imgDep3.src} alt="" />
-						<p>
-							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
-							special effects of a 3D Universal Studios ride with a telekinetic escape room."
-						</p>
-					</div>
+				<div class="textoInfinito">
+					<h3>THE EXPERIENCE</h3>
+					<h3>THE EXPERIENCE</h3>
+					<h3>THE EXPERIENCE</h3>
 				</div>
-			</section>
+			</footer>
 		</div>
-
-		<!-- SECAO 4 -->
-		<section class="secaoObrigado">
-			<h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
-			<ul>
-				<li>Sidney</li>
-				<li>São Paulo</li>
-				<li>Cruzeiro</li>
-				<li>Rio de Janeiro</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-				<li>Sidney</li>
-			</ul>
-		</section>
-	</main>
-
-	<!-- FOOTER -->
-	<footer>
-		<div class="conteudoFooter">
-			<div class="logoFooter">
-				<h3>THE EXPERIENCE</h3>
-				<h2>STRANGER THINGS</h2>
-			</div>
-			<div class="secoesFooter">
-				<div class="social">
-					<h3>REDES SOCIAIS</h3>
-					<ul>
-						<li><img src={footerFacebook.src} alt="" /></li>
-						<li><img src={footerInstagram.src} alt="" /></li>
-						<li><img src={footerTwitter.src} alt="" /></li>
-					</ul>
-				</div>
-				<div class="parceiro">
-					<h3>PARCEIRO DE MÍDIA</h3>
-					<img src={footerParceiro.src} alt="" />
-				</div>
-				<div class="institucional">
-					<h3>INSTITUCIONAL</h3>
-					<nav>
-						<ul>
-							<li>Contato</li>
-							<li>Imprensa</li>
-							<li>Parcerias</li>
-							<li>Influenciadores</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div class="logotiposFooter">
-			<img src={netflixLogo.src} alt="" />
-			<img src={feverLogo.src} alt="" />
-		</div>
-		<div class="textoInfinito">
-			<h3>THE EXPERIENCE</h3>
-			<h3>THE EXPERIENCE</h3>
-			<h3>THE EXPERIENCE</h3>
-		</div>
-	</footer>
+	</div>
 </Layout>
