@@ -4,35 +4,64 @@ import Layout from '@layouts/Layout.astro'
 
 // Astro Assets
 import { Image } from 'astro:assets'
+
+// Imagens
+import bg1Mobile from '@assets/bg-1-mobile.webp'
+import bg1 from '@assets/bg-1.webp'
+import bg2Mobile from '@assets/bg-2-mobile.webp'
+import bg2 from '@assets/bg-2.webp'
+import setaBotao from '@assets/seta-botao.svg'
+import netflixLogo from '@assets/netflix-logo.svg'
+import clioLogo from '@assets/clio-logo.svg'
+import feverLogo from '@assets/fever-logo.svg'
+import imgDep1 from '@assets/img-dep1.webp'
+import imgDep2 from '@assets/img-dep2.webp'
+import imgDep3 from '@assets/img-dep3.webp'
+import footerFacebook from '@assets/footer-facebook.svg'
+import footerInstagram from '@assets/footer-instagram.svg'
+import footerTwitter from '@assets/footer-twitter.svg'
+import footerParceiro from '@assets/footer-parceiro.svg'
 ---
 
 <Layout>
 	<header>
 		<h2>DRN.</h2>
-		<img src="/public/netflix-logo.svg" alt="Logo da Netflix" />
+		<img src={netflixLogo.src} alt="" />
 	</header>
+
+	<!-- SECOES PRINCIPAIS -->
 	<main>
+		<!-- SECAO HERO -->
 		<section class="hero">
+			<picture>
+				<source media="(max-width: 600px)" srcset={bg1Mobile.src} />
+				<img src={bg1.src} alt="" />
+			</picture>
+			<picture>
+				<source media="(max-width: 600px)" srcset={bg2Mobile.src} />
+				<img src={bg2.src} alt="" />
+			</picture>
 			<div class="esquerda">
 				<h3>THE EXPERIENCE</h3>
 				<h1>STRANGER THINGS</h1>
 			</div>
 			<div class="direita">
 				<p>Descubra os seus poderes e vire o herói de sua própria aventura!</p>
-				<button
-					>ESCOLHA A SUA CIDADE
-					<img src="/src/assets/seta.svg" alt="Seta" />
+				<button>
+					ESCOLHA SUA CIDADE
+					<img src={setaBotao.src} alt="" />
 				</button>
 			</div>
 		</section>
 
 		<div class="bgMonstro">
+			<!-- SECAO 2 -->
 			<section class="secaoCidade">
 				<div class="titulo">
 					<h2>ESCOLHA SUA CIDADE</h2>
-					<button
-						>COMPRAR INGRESSOS
-						<img src="/src/assets/seta.svg" alt="Seta" />
+					<button>
+						ESOLHA SUA CIDADE
+						<img src={setaBotao.src} alt="" />
 					</button>
 				</div>
 				<div class="cards">
@@ -41,7 +70,7 @@ import { Image } from 'astro:assets'
 						<p>INGRESSOS DISPONÍVEIS</p>
 					</div>
 					<div class="card">
-						<h3>Cidade de Méxicoy</h3>
+						<h3>Cidade do México</h3>
 						<p>INGRESSOS DISPONÍVEIS</p>
 					</div>
 					<div class="card">
@@ -50,54 +79,60 @@ import { Image } from 'astro:assets'
 					</div>
 				</div>
 			</section>
+
+			<!-- SECAO 3 -->
 			<section class="secaoDepoimentos">
 				<div class="logotipos">
-					<img src="/src/assets/netflix-logo.svg" alt="Logo da Netflix" />
-					<img src="/src/assets/clio-awards-logo.svg" alt="Logo da Clio Awards" />
-					<img src="/src/assets/logo-fever.svg" alt="Logo da Fever" />
+					<img src={netflixLogo.src} alt="" />
+					<img src={clioLogo.src} alt="" />
+					<img src={feverLogo.src} alt="" />
 				</div>
 				<div class="depoimentos">
 					<div class="depoimento">
-						<img src="/src/assets/logo-nbc.svg" alt="Logo da NBC" />
+						<img src={imgDep1.src} alt="" />
 						<p>
 							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
 							special effects of a 3D Universal Studios ride with a telekinetic escape room."
 						</p>
 					</div>
 					<div class="depoimento">
-						<img src="/src/assets/logo-fox.svg" alt="Logo da Fox13 SEATTLE" />
+						<img src={imgDep2.src} alt="" />
 						<p>
-							"Immerse yourself on your own adventure with Eleven, Michael, Dustin, Lucas, Max and
-							Will for a very special episode starring none other than you."
+							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
+							special effects of a 3D Universal Studios ride with a telekinetic escape room."
 						</p>
 					</div>
 					<div class="depoimento">
-						<img src="/src/assets/logo-san-francisco.svg" alt="Logo da SanFrancisco magazine" />
+						<img src={imgDep3.src} alt="" />
 						<p>
-							"The Stranger Things Experience is a scary, endearing, hilarious, and joyous
-							celebration of everything we already love about the show."
+							"Guests are immersed into an original "Stranger Things" storyline...[it] combines the
+							special effects of a 3D Universal Studios ride with a telekinetic escape room."
 						</p>
 					</div>
 				</div>
 			</section>
 		</div>
+
+		<!-- SECAO 4 -->
 		<section class="secaoObrigado">
 			<h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
 			<ul>
 				<li>Sidney</li>
-				<li>Rio de Janeiro</li>
 				<li>São Paulo</li>
-				<li>Los Angeles</li>
-				<li>Nova Iorque</li>
-				<li>São Francisco</li>
-				<li>Londres</li>
-				<li>Atlanta</li>
-				<li>Paris</li>
-				<li>Toronto</li>
-				<li>Seattle</li>
+				<li>Cruzeiro</li>
+				<li>Rio de Janeiro</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
+				<li>Sidney</li>
 			</ul>
 		</section>
 	</main>
+
+	<!-- FOOTER -->
 	<footer>
 		<div class="conteudoFooter">
 			<div class="logoFooter">
@@ -108,16 +143,17 @@ import { Image } from 'astro:assets'
 				<div class="social">
 					<h3>REDES SOCIAIS</h3>
 					<ul>
-						<li><img src="/src/assets/facebook.svg" alt="Logo do Facebook" /></li>
-						<li><img src="/src/assets/instagram.svg" alt="Logo do Instagram" /></li>
-						<li><img src="/src/assets/twitter.svg" alt="Logo do Twitter" /></li>
+						<li><img src={footerFacebook.src} alt="" /></li>
+						<li><img src={footerInstagram.src} alt="" /></li>
+						<li><img src={footerTwitter.src} alt="" /></li>
 					</ul>
 				</div>
 				<div class="parceiro">
 					<h3>PARCEIRO DE MÍDIA</h3>
-					<img src="/src/assets/footer-parceiro.svg" alt="Logo do Parceiro de Mídia" />
+					<img src={footerParceiro.src} alt="" />
 				</div>
 				<div class="institucional">
+					<h3>INSTITUCIONAL</h3>
 					<nav>
 						<ul>
 							<li>Contato</li>
@@ -130,8 +166,8 @@ import { Image } from 'astro:assets'
 			</div>
 		</div>
 		<div class="logotiposFooter">
-			<img src="/src/assets/netflix-logo.svg" alt="Logo da Netflix" />
-			<img src="/src/assets/logo-fever.svg" alt="Logo da Fever" />
+			<img src={netflixLogo.src} alt="" />
+			<img src={feverLogo.src} alt="" />
 		</div>
 		<div class="textoInfinito">
 			<h3>THE EXPERIENCE</h3>
