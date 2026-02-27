@@ -7,11 +7,13 @@ ScrollSmoother.create({
     effects: true
 })
 
+// ANIMAÇÕES DE ENTRADA NO EIXO Y, A IMAGEM DOS PERSONAGENS SUBINDO, POR ISSO O USO DO Y COM NÚMEROS POSITIVOS PARA SUBIR!
 gsap.from("picture:nth-child(2)", {
     y: 60,
     duration: 1
 })
 
+// ANIMAÇÕES DE ENTRADA NO EIXO Y, A SESSÃO COM A IMAGEM DO MONSTRO DESCENDO, POR ISSO O USO DO Y COM NÚMEROS NEGATIVOS, SE FOSSE POSITIVO ELE SUBIRIA!
 gsap.from("picture:nth-child(1)", {
     y: -60,
     duration: 1
@@ -23,9 +25,60 @@ gsap.from(".card", {
     stagger: .3,
     scrollTrigger: {
         trigger: ".cards",
-        markers: true,
         start: "0% 80%",
         end: "100% 70%",
         scrub: true
     }
 })
+
+gsap.from(".secaoObrigado ul li", {
+    opacity: 0,
+    x: 40,
+    filter: "blur(10px)",
+    stagger: .1,
+    scrollTrigger: {
+        trigger: ".secaoObrigado ul",
+        start: "0% 80%",
+        end: "100% 50%",
+        scrub: true
+    }
+})
+
+// ANIMAÇÃO DE ENTRADA DO FOOTER.
+
+gsap.from("footer", {
+    y: "-30%",
+    immediateRender: false,
+    scrollTrigger: {
+        trigger: "footer",
+        invalidateOnRefresh: true,
+        end: "100% 100%",
+        scrub: true
+    }
+})
+
+// LETRAS SURGINDO.
+
+const grupoTextoSplit = document.querySelectorAll(".textoSplit");
+
+grupoTextoSplit.forEach((textoUnicoSplit) => {
+    const split = SplitText.create(textoUnicoSplit, {
+        type: "lines, words, chars",
+        mask: "lines",
+    });
+
+    gsap.from(split.chars, {
+        y: 40,
+        opacity: 0,
+        duration: 0.3,
+        stagger: 0.03,
+        scrollTrigger: {
+            trigger: textoUnicoSplit,
+            markes: true
+        }
+    })
+
+})
+
+
+
