@@ -1,4 +1,4 @@
-# PlayUp Easyform Landing Page
+# Stranger-Things GSAP
 
 ```sh
 pnpm install
